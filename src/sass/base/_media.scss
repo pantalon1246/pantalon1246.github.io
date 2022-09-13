@@ -14,3 +14,86 @@
         }
     }
 }
+@media (max-width: 768px) {
+    .promo {
+        min-height: 560px;
+        padding-bottom: 25px;
+        &__header {
+            font-size: 37px;
+        }
+        &__subheader {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        &__icons {
+            width: 365px;
+        }
+        &__link {
+            font-size: 14px;
+            margin-top: 8px;
+        }
+        .button {
+            &_main {
+                width: 250px;
+                height: 45px;
+            }
+        }
+    }
+    .header {
+        &__logo {
+            a {
+                width: 200px;
+            }
+        }
+        &__oficial {
+            font-size: 12px;
+            span {
+                font-size: 14px;
+            }
+        }
+        &__phone {
+            font-size: 17px;
+        }
+    }
+    .advantages {
+        padding: 45px 0 55px 0;
+        &__wrapper {
+            margin-top: 40px;
+            flex-direction: column;
+        }
+        &__icon {
+            margin-top: 15px;
+        }
+        &__title {
+            margin-top: 15px;
+        }
+        &__descr {
+            margin: 0 auto;
+            margin-top: 5px;
+        }
+    }
+    .title {
+        font-size: 25px;
+    }
+}
+@media (max-width: 565px) {
+    .promo {
+        &__header {
+            margin: 60px 0 0 5px;
+        }
+        &__subheader {
+            margin: 5px 0 0 5px;
+        }
+        &__wrapper {
+            align-items: center;
+        }
+        &__icons {
+            width: 290px;
+        }
+    }
+    .header {
+        &__oficial {
+            display: none;
+        }
+    }
+}
