@@ -13,6 +13,9 @@
             width: 240px;
         }
     }
+    .consultation {
+        padding-left: 15px;
+    }
 }
 @media (max-width: 768px) {
     .promo {
@@ -74,6 +77,21 @@
     }
     .title {
         font-size: 25px;
+        &_left {
+            text-align: center;
+            line-height: 34px;
+        }
+    }
+    .consultation {
+        min-height: 570px;
+        padding: 50px 0 30px 0;
+        &__descr {
+            text-align: center;
+        }
+    }
+    .feed-form {
+        margin: 0 auto;
+        margin-top: 50px;
     }
 }
 @media (max-width: 565px) {
@@ -94,6 +112,26 @@
     .header {
         &__oficial {
             display: none;
+        }
+    }
+    .title {
+        &_left {
+            font-size: 22px;
+            line-height: 29px;
+        }
+    }
+    .consultation {
+        min-height: 530px;
+        &__descr {
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+    .feed-form {
+        margin-top: 30px;
+        width: 260px;
+        input {
+            height: 40px;
         }
     }
 }
