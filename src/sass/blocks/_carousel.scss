@@ -11,8 +11,8 @@
             }
         }
     }
-    .prev,
-    .next {
+    .slick-prev,
+    .slick-next {
         position: absolute;
         border: none;
         background-color: #ffffff;
@@ -24,7 +24,7 @@
             height: 50px;
         }
     }
-    .next {
+    .slick-next {
         right: -66px;
         left: auto;
     }
