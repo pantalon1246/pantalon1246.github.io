@@ -16,6 +16,16 @@
     .consultation {
         padding-left: 15px;
     }
+    .catalog {
+        &__content {
+            justify-content: space-around;
+        }
+    }
+    .reviews {
+        &__descr {
+            width: 470px;
+        }
+    }
 }
 @media (max-width: 768px) {
     .promo {
@@ -81,6 +91,9 @@
             text-align: center;
             line-height: 34px;
         }
+        &_catalog {
+            font-size: 25px;
+        }
     }
     .consultation {
         min-height: 570px;
@@ -92,6 +105,36 @@
     .feed-form {
         margin: 0 auto;
         margin-top: 50px;
+    }
+    .catalog {
+        &__content {
+            margin-top: 45px;
+        }
+        &__tab {
+            width: 150px;
+            height: 45px;
+            div {
+                font-size: 15px;
+                line-height: 45px;
+            }
+        }
+    }
+    .catalog-item {
+        padding: 15px 15px 5px 15px;
+        min-height: 430px;
+        &__img {
+            height: 175px;
+        }
+    }
+    .reviews {
+        &__img {
+            margin-right: 30px;
+        }
+        &__descr {
+            width: 282px;
+            font-size: 15px;
+            line-height: 20px;
+        }
     }
 }
 @media (max-width: 565px) {
@@ -132,6 +175,44 @@
         width: 260px;
         input {
             height: 40px;
+        }
+    }
+    .catalog {
+        &__tabs {
+            flex-wrap: wrap;
+            padding: 0;
+            margin-top: 25px;
+        }
+        &__tab {
+            width: 275px;
+            height: 40px;
+            div {
+                font-size: 14px;
+                line-height: 40px;
+            }
+        }
+    }
+    .catalog-item {
+        width: 290px;
+        &__content {
+            &_active {
+                margin-right: 10px;
+            }
+        }
+    }
+    .reviews {
+        &__content {
+            flex-wrap: wrap;
+        }
+        &__img {
+            margin: 0;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__text {
+            text-align: center;
         }
     }
 }
