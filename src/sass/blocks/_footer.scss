@@ -48,5 +48,10 @@
         img {
             height: 25px;
         }
+        &:hover {
+            color: bisque;
+            transition: 0.5s all;
+            box-shadow: 3px 3px 15px bisque;
+        }
     }
 }

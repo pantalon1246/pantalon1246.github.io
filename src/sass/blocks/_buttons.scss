@@ -9,6 +9,11 @@
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
+    &:hover {
+        color: bisque;
+        transition: 0.5s all;
+        box-shadow: 3px 3px 15px bisque;
+    }
     &_main {
         width: 303px;
         height: 54px;
