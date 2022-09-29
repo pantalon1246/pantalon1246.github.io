@@ -105,6 +105,15 @@
     .feed-form {
         margin: 0 auto;
         margin-top: 50px;
+        &_mt25 {
+            margin-top: 15px;
+            input {
+                height: 48px;
+            }
+            .button_submit {
+                height: 52px;
+            }
+        }
     }
     .catalog {
         &__content {
@@ -149,6 +158,10 @@
                 box-shadow: none;
             }
         }
+    }
+    .modal {
+        min-height: 350px;
+        padding: 25px 30px 30px 30px;
     }
 }
 @media (max-width: 565px) {
@@ -266,6 +279,13 @@
             &:hover {
                 box-shadow: none;
             }
+        }
+    }
+    .modal {
+        width: 100%;
+        &__close {
+            right: 5px;
+            top: 8px;
         }
     }
 }

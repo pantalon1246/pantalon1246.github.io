@@ -49,4 +49,47 @@ $(document).ready(function () {
 
     toggleSlide(".catalog-item__link");
     toggleSlide(".catalog-item__back");
+
+    $("[data-modal=consultation]").on("click", function () {
+        $(".overlay, #consultation").fadeIn();
+    });
+    $(".modal__close").on("click", function () {
+        $(".overlay, #consultation, #thanks, #order").fadeOut();
+    });
+    $(".button_mini").each(function (i) {
+        $(this).on("click", function () {
+            $("#order .modal__descr").text(
+                $(".catalog-item__subtitle").eq(i).text()
+            );
+            $(".overlay, #order").fadeIn();
+        });
+    });
+
+    function valideForms(form) {
+        $(form).validate({
+            rules: {
+                // simple rule, converted to {required:true}
+                name: "required",
+                phone: "required",
+                // compound rule
+                email: {
+                    required: true,
+                    email: true,
+                },
+            },
+            messages: {
+                name: "Пожалуйста, введите своё имя",
+                phone: "Пожалуйста введите свой номер телефона",
+                email: {
+                    required: "Введите свой email",
+                    email: "Ваш email адресс должен быть в формате: name@domain.com",
+                },
+            },
+        });
+    }
+    valideForms("#consultation-form");
+    valideForms("#consultation form");
+    valideForms("#order form");
+
+    $("input[name=phone]").mask("+7 (999) 999-99-99");
 });
